@@ -1,16 +1,7 @@
-export interface ClothesItem {
-  description: string;
-  name: string;
-}
-type Mood = 'happy' | 'sad' | 'anger' | 'fear' | 'surprise' | 'disgust';
-
 export interface ResponseData {
-  clothes: ClothesItem[];
-  mood: Mood;
-  today: number;
+  description: string;
+  params: string;
+  url: string;
 }
 
-export interface RequestData {
-  gender: 'man' | 'woman';
-  mood: Mood;
-}
+export type RequestData = ResponseData;

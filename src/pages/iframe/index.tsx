@@ -44,7 +44,7 @@ const Render = memo(() => {
         }}
         type={'primary'}
       >
-        查询衣物
+        画图
       </Button>
     </Center>
   );
