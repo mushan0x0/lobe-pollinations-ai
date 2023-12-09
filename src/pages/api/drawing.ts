@@ -6,6 +6,8 @@ export const config = {
   runtime: 'edge',
 };
 
+const BASE_URL = 'https://image.pollinations.ai/prompt';
+
 export default async (req: Request) => {
   if (req.method !== 'POST') return createErrorResponse(PluginErrorType.MethodNotAllowed);
 
@@ -14,10 +16,7 @@ export default async (req: Request) => {
   const result: ResponseData = {
     description,
     params,
-    url: `https://image.pollinations.ai/prompt/${description.replaceAll(
-      /[^A-Za-z]/g,
-      '_',
-    )}}?${params}`,
+    url: `${BASE_URL}/${description.replaceAll(/\s/g, '_')}}?${params}`,
   };
 
   return new Response(JSON.stringify(result));
