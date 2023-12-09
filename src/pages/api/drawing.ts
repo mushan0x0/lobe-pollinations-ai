@@ -14,7 +14,10 @@ export default async (req: Request) => {
   const result: ResponseData = {
     description,
     params,
-    url: `https://image.pollinations.ai/prompt/${description}?${params}`,
+    url: `https://image.pollinations.ai/prompt/${description.replaceAll(
+      /[^A-Za-z]/g,
+      '_',
+    )}}?${params}`,
   };
 
   return new Response(JSON.stringify(result));
