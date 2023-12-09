@@ -1,5 +1,7 @@
+import { createLobeChatPluginGateway } from '@lobehub/chat-plugins-gateway';
+
 export const config = {
   runtime: 'edge',
 };
 
-export { createLobeChatPluginGateway as default } from '@lobehub/chat-plugins-gateway';
+export default async (req: Request) => createLobeChatPluginGateway()(req);
