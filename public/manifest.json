@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
   "api": [
     {
-      "url": "https://pollinations.ai0x0.com/api/drawing",
+      "url": "https://pollinations.ai-chat.top/api/drawing",
       "name": "drawing",
       "description": "根据用户要求进行画图。",
       "parameters": {
@@ -21,7 +21,7 @@
       }
     }
   ],
-  "gateway": "http://pollinations.ai0x0.com/api/gateway",
+  "gateway": "https://pollinations.ai-chat.top/api/gateway",
   "identifier": "pollinations-drawing",
   "meta": {
     "avatar": "🎨",
@@ -30,7 +30,7 @@
     "description": "通过 pollinations.ai 进行图像生成"
   },
   "ui": {
-    "url": "http://pollinations.ai0x0.com",
+    "url": "https://pollinations.ai-chat.top",
     "height": 170
   },
   "version": "1"
