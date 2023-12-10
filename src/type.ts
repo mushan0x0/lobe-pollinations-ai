@@ -1,7 +1,7 @@
 export interface ResponseData {
   description: string;
   params: string;
-  url: string;
+  result: string;
 }
 
 export type RequestData = ResponseData;

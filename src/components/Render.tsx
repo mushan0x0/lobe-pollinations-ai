@@ -3,7 +3,7 @@ import { memo } from 'react';
 
 import { ResponseData } from '@/type';
 
-const Render = memo<Partial<ResponseData>>(({ description, params, url }) => {
+const Render = memo<Partial<ResponseData>>(({ description, params, result }) => {
   const items: DescriptionsProps['items'] = [
     {
       children: description,
@@ -18,9 +18,9 @@ const Render = memo<Partial<ResponseData>>(({ description, params, url }) => {
       span: 3,
     },
     {
-      children: url,
+      children: result,
       key: '3',
-      label: 'Url',
+      label: 'Result',
       span: 3,
     },
   ];
