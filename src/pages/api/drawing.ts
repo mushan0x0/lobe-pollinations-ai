@@ -16,7 +16,9 @@ export default async (req: Request) => {
   const result: ResponseData = {
     description,
     params,
-    result: `![result](${BASE_URL}/${description.replaceAll(/\s/g, '%20')}?${params})`,
+    result: `![result](${BASE_URL}/${description
+      .replaceAll(/\s/g, '%20')
+      .replaceAll(/[,.]/g, '')}?${params})`,
   };
 
   return new Response(JSON.stringify(result));

@@ -22,7 +22,7 @@
     }
   ],
   "gateway": "http://localhost:3400/api/gateway",
-  "identifier": "pollinations-drawing",
+  "identifier": "pollinations-drawing-dev",
   "meta": {
     "avatar": "🎨",
     "tags": ["drawing"],
