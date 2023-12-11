@@ -31,7 +31,7 @@
   },
   "ui": {
     "url": "http://localhost:3400",
-    "height": 200
+    "height": 120
   },
   "version": "1"
 }

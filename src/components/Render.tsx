@@ -18,7 +18,7 @@ const Render = memo<Partial<ResponseData>>(({ description, params }) => {
       span: 3,
     },
   ];
-  return <Descriptions bordered items={items} />;
+  return <Descriptions bordered items={items} style={{ display: 'inline-block' }} />;
 });
 
 export default Render;
