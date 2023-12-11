@@ -31,7 +31,8 @@
   },
   "ui": {
     "url": "https://pollinations.ai-chat.top",
-    "height": 120
+    "height": 120,
+    "width": 500
   },
   "version": "1"
 }
