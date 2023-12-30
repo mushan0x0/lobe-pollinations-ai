@@ -2,6 +2,10 @@ import { PluginErrorType, createErrorResponse } from '@lobehub/chat-plugin-sdk';
 
 import { RequestData } from '@/type';
 
+export const config = {
+  runtime: 'edge',
+};
+
 const BASE_URL = 'https://image.pollinations.ai/prompt';
 
 export default async (req: Request) => {
