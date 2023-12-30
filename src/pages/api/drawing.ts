@@ -1,6 +1,6 @@
 import { PluginErrorType, createErrorResponse } from '@lobehub/chat-plugin-sdk';
 
-import { RequestData, ResponseData } from '@/type';
+import { RequestData } from '@/type';
 
 export const config = {
   runtime: 'edge',
@@ -13,13 +13,9 @@ export default async (req: Request) => {
 
   const { description, params } = (await req.json()) as RequestData;
 
-  const result: ResponseData = {
-    description,
-    params,
-    result: `![result](${BASE_URL}/${description
-      .replaceAll(/\s/g, '%20')
-      .replaceAll(/[,.]/g, '')}?${params})`,
-  };
+  const result = `![result](${BASE_URL}/${description
+    .replaceAll(/\s/g, '%20')
+    .replaceAll(/[,.]/g, '')}?${params})`;
 
-  return new Response(JSON.stringify(result));
+  return new Response(result);
 };

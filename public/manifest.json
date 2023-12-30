@@ -29,10 +29,6 @@
     "title": "授粉 AI 画图",
     "description": "通过 pollinations.ai 进行图像生成"
   },
-  "ui": {
-    "url": "https://pollinations.ai-chat.top",
-    "height": 120,
-    "width": 500
-  },
+  "type": "markdown",
   "version": "1"
 }
