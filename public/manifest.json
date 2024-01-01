@@ -21,7 +21,6 @@
       }
     }
   ],
-  "gateway": "https://pollinations.ai-chat.top/api/gateway",
   "identifier": "pollinations-drawing",
   "meta": {
     "avatar": "🎨",
